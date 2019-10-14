@@ -32,3 +32,4 @@ pdList: test-pd-0.test-pd-peer.test-cs.svc:2379,test-pd-1.test-pd-peer.test-cs.s
  bin/tidb-server --store=tikv --path="$pdList(in the log of step2)"
 
 ```
+*The external TiDB need to run the same server with the forward tool.*
