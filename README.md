@@ -1,14 +1,14 @@
-#Introduction
+# Introduction
 The purpose of this tool is to provide external TiDB connect Kubernetes TiDB Cluster. 
 This is especially useful to debug Kubernetes TiDB Cluster.
 
-#Quick start
-#Build the current project
+# Quick start
+## Build the current project
 ```$xslt
  go build -o forward cmd/main/main.go
 ```
 
-##Run
+## Run the binary
 ```$xslt
 sudo ./forward --path=/Users/andy/.kube/config --namespace=$namesapce
 ```
@@ -27,7 +27,7 @@ Forwarding from [::1]:51578 -> 2379
 pdList: test-pd-0.test-pd-peer.test-cs.svc:2379,test-pd-1.test-pd-peer.test-cs.svc:2379
 ```
 
-External TiDB join in Kubernetes TiDB Cluster
+## External TiDB join in Kubernetes TiDB Cluster
 ```$xslt
  bin/tidb-server --store=tikv --path="$pdList(in the above)"
 
